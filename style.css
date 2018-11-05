@@ -1,141 +1,22 @@
-body {
-    background-color: ;
-}
-
-* {
-    margin: 0;
-
+*{
+margin: 0;
     
 }
-
-html,
-body {
-    height: 100%;
+body{
+    background-color: black;
 }
-
-#test {
-    background-color: chartreuse;
-    color: black;
-    font-size: 70px;
-    text-align: center;
-    border-radius: 35px;
-    text-shadow: 1px 1px 2px black;
-}
-
-#vid {
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    border-radius: 35px;
-    background: black;
-}
-
-#form {
-    padding-left: 69%;
-    font-size: 22px;
-}
-
-
-.block{
-    width: 300px;
-    margin: 65px;
-    padding: 10px;
-    border: 4px solid black;
-    margin-right: 7px;
-    border-top-width: 14px;
-    display:inline-block;
-    margin-right: 4%;
-    border-radius: 27px;
-    
+#data{
+text-align: center;
+    font-size: 50px;
+    margin-top:10%;
+    color: white;
     
 }
+#input{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-right-width: 10px;
+    border-top-width: 5px;
+    text-align: 20px;
 
-.tek {
-    background: black;
-    color: #2fd226;
-    font-size: 70px;
-    text-align: right;
-    margin-top: 39px; //
 }
-
-.input {
-    border-right-width: 7px;
-    text-align: center;
-    font-size: 40px;
-    width: 100%;
-}
-
-.boot {
-    border: 5px solid black;
-    text-align: center;
-}
-
-.foto {
-    width: 100%;
-    max-width: 50%;
-    position: relative;
-    margin-left: 24%;
-    border: 10px solid silver;
-    border-radius: 20px;
-    border-right-width: 61px;
-}
-
-
-/* Футер  */
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.content {
-    flex-grow: 1;
-    width: 100%;
-    max-width: 100;
-    border-top-width: 4px;
-}
-
-input {
-    border-top-width: 4px;
-    width: 56%;
-    border-radius: 7px;
-}
-
-
-/* Футер   */
-
-
-/* меню */
-
-.nav {
-    margin: 20px 0;
-    width: 70%;
-}
-
-.nav li {
-    margin: 0 5px 10px 0;
-    list-style: none;
-    display: inline-block;
-}
-
-.nav a {
-    padding: 3px 12px;
-    text-decoration: none;
-    color: black;
-    line-height: 100%;
-}
-
-.nav a:hover {
-    color: #000;
-}
-
-.nav .current a {
-    background: black;
-    color: #fff;
-    border-radius: 3px;
-}
-
-
-/* Меню  */
-
-:: {}
