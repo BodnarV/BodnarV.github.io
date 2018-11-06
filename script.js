@@ -1,5 +1,9 @@
 
 var b = document.getElementById("test1");
+var c = document.getElementById("test2");
+
+    var a = document.getElementById("input");
+
 
 function randomInt(min,max){
 return Math.floor(Math.random() * (max - min) + min);
@@ -14,7 +18,12 @@ function randomInt2(min,max){
 return Math.floor(Math.random() * (max - min) + min);
 }
 
-b.innerHTML=( "Число"+ "= "+randomInt2(1,31)+"________" +"Місяць  "+" = "+randomInt1(1,12)+"________" + "Рік "+"= "+randomInt(2018,2090) );
+var mus = ["Січня","Лютого","Березня","Квітня","Травня","Червня","Липня","Серпня","Вересня","Жовтня","Листопада","Грудня"];
+
+var rand = Math.floor(Math.random() * mus.length);
+
+b.innerHTML=("Ти помреш:"+" "+ randomInt2(1,31)+ "  " + mus[rand]+ " "+randomInt(2018,2090)+" року." );
 function fun1(){
-b.style.opacity="0.9";
+     c.innerHTML=(a.value+",");
+    b.style.opacity="0.9";
 }
