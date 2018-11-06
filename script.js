@@ -24,6 +24,8 @@ var rand = Math.floor(Math.random() * mus.length);
 
 b.innerHTML=("Ти помреш:"+" "+ randomInt2(1,31)+ "  " + mus[rand]+ " "+randomInt(2018,2090)+" року." );
 function fun1(){
+    if(a.value!=0){
      c.innerHTML=(a.value+",");
     b.style.opacity="0.9";
+  }
 }
