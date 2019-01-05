@@ -1,0 +1,46 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#time
+{
+    text-align: center;
+    margin-top: 20%;
+    font-size: 80px;
+    border: 3px solid black;
+    border-radius: 7%;
+    width: 400px;
+    height: 100px;
+    margin:0 auto;
+    margin-top: 400px;
+}
+.tabs
+{
+    text-align: center;
+    font-size: 30px;
+}
+.tab div
+{
+    border: 2px solid black;
+    width: 8%;
+    margin-left:46%;
+}
+.tab div:hover{color: yellow;}
+
+.text
+{
+    position: relative;
+}
+.text 
+{
+    margin-left: 48%;
+    position:  absolute;
+    opacity: 0;
+}
+.show
+{
+    opacity:1;
+}
