@@ -3079,6 +3079,6 @@ width: 100%;
     display: none;
 }
 #sidebar{
-    display: none;
+    display: none!important;
 }
-#canvas{display: none;}
+#canvas{display: none !important}
