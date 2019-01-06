@@ -3078,4 +3078,7 @@ width: 100%;
 .b-episode-post #tv_player .adv{
     display: none;
 }
+#sidebar{
+    display: none;
+}
 
