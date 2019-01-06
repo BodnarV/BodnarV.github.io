@@ -22,7 +22,7 @@
         <div id="main" class="b-wrapper">
         
             <div class="b-header clearfix">
-                <a title="На главную" class="b-logo" href="..\..\index.html"></a>
+                <a title="На главную" class="b-logo" href="index.html"></a>
                 
                 <ul class="b-panel">
                     <li class="b-panel-auth">
@@ -165,7 +165,7 @@
         
         <div id="tv_player">
             <div class="player">
-                <iframe width="620" height="360" src="https://www.youtube.com/embed/f4dCdbu__pg" frameborder="0" allowfullscreen=""></iframe>
+                <iframe  src="https://www.youtube.com/embed/INPAWZT6fC0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="adv">
                 <div class="inner">
@@ -325,7 +325,7 @@ var fombj    = document.getElementById( 'dle-comments-form' );
     </div>
 </div>
         <input type="hidden" name="subaction" value="addcomment">
-        <input type="hidden" name="post_id" id="post_id" value="25"></form><script language="javascript" type="text/javascript">
+        <input type="hidden" name="post_id" id="post_id" value="25"></form><script language="javascript" type="text/javascript" defer>
 <!--
 $(function(){
 
@@ -370,7 +370,7 @@ function reload () {
                 
 <div style="padding-bottom: 15px;">
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
+<script defer>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
@@ -398,7 +398,7 @@ VK.Widgets.Group("vk_groups", {mode: 0, width: "280", height: "290"}, 56589079);
 </div>
 
 
-<script>
+<script defer>
     $(function () {
         $('.b-post-favorite a').on('click', function (e) {
             DLEalert('Закладки доступны только авторизированным пользователям. <a href="/index.php?do=register" onclick="$(\'.b-guest-register\').trigger(\'click\'); $(\'#dlepopup\').parent().hide(); return false;">Зарегистрируйтесь</a> или <a href="javascript:void(0)" onclick="$(\'.b-guest-login\').trigger(\'click\'); $(\'#dlepopup\').parent().hide(); return false;">войдите через социальные сети</a>, чтобы пользоваться сайтом без ограничений.<br /><br />', dle_info);
@@ -590,7 +590,8 @@ var allow_dle_delete_news   = false;
     
 
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
+<script type="text/javascript" defer
+>
 (function (d, w, c) {
     (w[c] = w[c] || []).push(function() {
         try {
@@ -616,7 +617,8 @@ var allow_dle_delete_news   = false;
 <noscript><div><img src="//mc.yandex.ru/watch/22466392" style="position:absolute; left:-9999px;" alt=""></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
-<script>
+<script defer
+>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -628,6 +630,7 @@ var allow_dle_delete_news   = false;
 </script>
 <div id="overlay"></div>
 <div id="ex-ajax-layer" style="display: none;"></div>
+<script src="../script.js"></script>
 </body>
 </html>
 <!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

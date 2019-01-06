@@ -22,7 +22,7 @@
         <div id="main" class="b-wrapper">
         
             <div class="b-header clearfix">
-                <a title="На главную" class="b-logo" href="..\..\index.html"></a>
+                <a title="На главную" class="b-logo" href="index.html"></a>
                 
                 <ul class="b-panel">
                     <li class="b-panel-auth">
@@ -165,7 +165,7 @@
         
         <div id="tv_player">
             <div class="player">
-                <iframe width="620" height="360" src="https://www.youtube.com/embed/sX75Bt1vnxo" frameborder="0" allowfullscreen=""></iframe>
+                <iframe  src="https://www.youtube.com/embed/DtaVA0JwqTI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="adv">
                 <div class="inner">
@@ -249,38 +249,7 @@
                     <tr>
                         <td width="405">
                             <label for="comments">Напишите комментарий <span class="impot">*</span></label>
-                            <script language="javascript" type="text/javascript">
-<!--
-var text_enter_url       = "Введите полный URL ссылки";
-var text_enter_size       = "Введите размеры флэш ролика (ширина, высота)";
-var text_enter_flash       = "Введите ссылку на флэш ролик";
-var text_enter_page      = "Введите номер страницы";
-var text_enter_url_name  = "Введите название сайта";
-var text_enter_page_name = "Введите описание ссылки";
-var text_enter_image    = "Введите полный URL изображения";
-var text_enter_email    = "Введите e-mail адрес";
-var text_code           = "Использование: [CODE] Здесь Ваш код.. [/CODE]";
-var text_quote          = "Использование: [QUOTE] Здесь Ваша Цитата.. [/QUOTE]";
-var text_upload         = "Загрузка файлов и изображений на сервер";
-var error_no_url        = "Вы должны ввести URL";
-var error_no_title      = "Вы должны ввести название";
-var error_no_email      = "Вы должны ввести e-mail адрес";
-var prompt_start        = "Введите текст для форматирования";
-var img_title   		= "Введите по какому краю выравнивать картинку (left, center, right)";
-var email_title  	    = "Введите описание ссылки";
-var text_pages  	    = "Страница";
-var image_align  	    = "left";
-var bb_t_emo  	        = "Вставка смайликов";
-var bb_t_col  	        = "Цвет:";
-var text_enter_list     = "Введите пункт списка. Для завершения ввода оставьте поле пустым.";
-var text_alt_image      = "Введите описание изображения";
-var img_align  	        = "Выравнивание";
-var img_align_sel  	    = "<select name='dleimagealign' id='dleimagealign' class='ui-widget-content ui-corner-all'><option value='' >Нет</option><option value='left' selected>По левому краю</option><option value='right' >По правому краю</option><option value='center' >По центру</option></select>";
-
-var selField  = "comments";
-var fombj    = document.getElementById( 'dle-comments-form' );
--->
-</script>
+                       
 <div style="width:383px;border:1px solid #ccc;" class="editor editor_comment">
   <textarea name="comments" id="comments" cols="" rows="" style="width:383px;height:79px;border:0px;margin: 0px 1px 0px 0px;padding: 0px;" onfocus="setNewField(this.name, document.getElementById( 'dle-comments-form' ))"></textarea>
 </div>
@@ -325,26 +294,7 @@ var fombj    = document.getElementById( 'dle-comments-form' );
     </div>
 </div>
         <input type="hidden" name="subaction" value="addcomment">
-        <input type="hidden" name="post_id" id="post_id" value="31"></form><script language="javascript" type="text/javascript">
-<!--
-$(function(){
-
-    $('#dle-comments-form').submit(function() {
-      doAddComments();
-      return false;
-    });
-
-});
-
-function reload () {
-
-    var rndval = new Date().getTime(); 
-
-    document.getElementById('dle-captcha').innerHTML = '<img src="/engine/modules/antibot.php?rndval=' + rndval + '" width="120" height="50" alt="" /><br /><a onclick="reload(); return false;" href="#">обновить, если не виден код</a>';
-
-};
-//-->
-</script>
+        <input type="hidden" name="post_id" id="post_id" value="31"></form>
                 
 <div id="dle-ajax-comments"></div>
 
@@ -628,6 +578,7 @@ var allow_dle_delete_news   = false;
 </script>
 <div id="overlay"></div>
 <div id="ex-ajax-layer" style="display: none;"></div>
+<script src="../script.js"></script>
 </body>
 </html>
 <!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->
