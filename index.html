@@ -1,101 +1,63 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="styl">
-<div id="block">
-    <img src="img/1.png" alt="">
-    <img src="img/2.png" alt="">
-    <img src="img/3.png" alt="">
-    <img src="img/4.png" alt="">
-    <img src="img/5.png" alt="">
-</div>
-
-</div>
-<div id='back'>
-    </div>
-<button id='btn' style="">RUN</button>
-<script>
-    
-//=========================================================Back
-var elem = document.querySelector('#back');
-funElemB(elem,155);
-    function funElemB(elem,kil){
-    for(var i =0;i<kil;i++){
-        var back = document.createElement('img');
-        back.src = "http://www.pvsm.ru/images/2016/08/12/sozdanie-beskonechnogo-rannera-na-JavaScript-mehanika-dvijeniya-fona-3.png";
-        back.className = 'img1';
-        elem.appendChild(back);
-    }
-       
-}
-//============================================================Fon
-var elem1 = document.querySelector('.styl');
-funElemF(elem1,155);
-    function funElemF(elem1,kil){
-    for(var i =0;i<kil;i++){
-        var fon = document.createElement('img');
-        fon.src = "https://habrastorage.org/getpro/habr/post_images/e57/a57/608/e57a57608b61a8d90fa3388041ea55ec.jpg";
-        fon.className = 'img';
-        elem1.appendChild(fon);
-    }
-       
-}
-//==========================================================Run_fon
-var imgs = document.querySelectorAll('.styl .img');
-    var imgs2 = document.querySelectorAll('.img1');
+   <input type="text" class="name" placeholder="Name">
+   <input type="text" class="surname" placeholder="Surname">
+   <input type="text" class="nomer" placeholder="Nomer">
+   <button class="btn">Add</button>
+   <table class="table">
+       <tr> 
+       <td><b>Number</b></td>
+       <td><b>Last Name</b></td>
+       <td><b>First Name</b></td>
+       <td><b>Raiting</b></td>
+       <td><b>Delete</b></td>
+        </tr>
+   </table>
+<!--
+   <tr>
+   <td>
+   <button class="del">111111</button>
+   <button class="del">1111112</button>
+   <td><button class="del">1111112.5</button></td>
+   <button class="del">1111113</button>
+   <button class="del">1111114</button>
+   <button class="del">1111115</button>
+   <button class="del">1111116</button>
+   </td>
+   </tr>
+-->
+    <script>
+//-----------------------------------------------table-tr-td-create
+    var num = 0;
+     document.querySelector('.btn').onclick = function(){
+         var name = document.querySelector('.name').value;
+         var surname = document.querySelector('.surname').value;
+         var nomer = document.querySelector('.nomer').value;
+         var type = `<tr class='del'> <td>${num}</td> <td>${name}</td> <td>${surname}</td> 
+        <td>${nomer}</td> <td><button class='del'>delete</button></td></tr>`;
+          document.querySelector('.table').innerHTML += type;
+       num++;
      
-    var left =0;
-    function cl(){
-       var i=0;
-        imgs[i].style.marginLeft = left+'px';
-        imgs2[i].style.marginLeft = left+'px';
+    //----------------------------------------delete
+var i = 0;
+var b= document.querySelectorAll('.del');  
         
-        left-=4;
-      
-    }
-document.querySelector('#btn').onclick = function(){
-    setInterval(cl,15);
-}
-//==================================================Sprite_run
-var imgs1 = document.querySelectorAll('#block img');
-var j=0;
-function moove(){
-    imgs1[j].style.display = 'none';
-    j++;
-    if(j>=imgs1.length){
-       j=0;
-    }
-    imgs1[j].style.display = 'block';
-}
-    setInterval(moove,150);
-    
-//--------------------------------------Over_code
-class Skils{
-    constructor(){
-        this.skils = 15;
+for(var i=0;i<b.length;i++){ 
+    b[i].addEventListener("click",fun);
+ }
+    function fun(){
+     this.classList.toggle('cl');
+       
     }
 }
-class Pro extends Skils{
-    constructor(length,age){
-        super();
-        this.length = length;
-        this.age = age;
-    }
-    eat(){
-        return 1;
-    }
-}
-var pro1 = new Pro(12,32);
-var skils = new Skils();
-    console.log(pro1.eat());
-    console.log(pro1);
-    
-</script>
+
+       
+    </script>
 </body>
 </html>
-

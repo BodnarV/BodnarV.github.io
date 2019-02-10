@@ -1,53 +1,10 @@
-* {
-     margin: 0;
-     padding: 0;
- }
- 
- img {
-     width: 800px;
-     height: 400px;
-     margin: -2px;
-    
- }
- 
- #block {
-     position: fixed;
-     width: 400px;
-     height: 197px;
-/*     border: 1px solid black;*/
-     margin: 0 auto;
-     margin-left: 30.5%;
-    
- }
- 
- .styl {
-     display: inline-flex;
-     position: relative;
-     transition:margin-left 500ms;
-     
- }
-#block img {
-    width: 110px;
-    height:110px;
-    margin-top: 280px;
-    margin-left: 30px;
-    position: absolute;
+table td{
+    border: 1px solid black;
+}
+.cl{
     display: none;
-   
 }
-
-#block img:first-child{
-   display: block;
-}
-
-.img1{
-    width: 780px;
-    height: 100px;
-    position: relative;
-    top:-42px;
-    
-}
-#back{
-    display: inline-flex;
-   
+*{
+text-align: center;
+    margin: 0 auto;
 }
