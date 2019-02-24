@@ -1,63 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <input type="text" class="name" placeholder="Name">
-   <input type="text" class="surname" placeholder="Surname">
-   <input type="text" class="nomer" placeholder="Nomer">
-   <button class="btn">Add</button>
-   <table class="table">
-       <tr> 
-       <td><b>Number</b></td>
-       <td><b>Last Name</b></td>
-       <td><b>First Name</b></td>
-       <td><b>Raiting</b></td>
-       <td><b>Delete</b></td>
-        </tr>
-   </table>
-<!--
-   <tr>
-   <td>
-   <button class="del">111111</button>
-   <button class="del">1111112</button>
-   <td><button class="del">1111112.5</button></td>
-   <button class="del">1111113</button>
-   <button class="del">1111114</button>
-   <button class="del">1111115</button>
-   <button class="del">1111116</button>
-   </td>
-   </tr>
--->
-    <script>
-//-----------------------------------------------table-tr-td-create
-    var num = 0;
-     document.querySelector('.btn').onclick = function(){
-         var name = document.querySelector('.name').value;
-         var surname = document.querySelector('.surname').value;
-         var nomer = document.querySelector('.nomer').value;
-         var type = `<tr class='del'> <td>${num}</td> <td>${name}</td> <td>${surname}</td> 
-        <td>${nomer}</td> <td><button class='del'>delete</button></td></tr>`;
-          document.querySelector('.table').innerHTML += type;
-       num++;
-     
-    //----------------------------------------delete
-var i = 0;
-var b= document.querySelectorAll('.del');  
+    <title>CREATIVIA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style media="screen">
+        table td {
+            padding: 30px;
+            border: 1px solid black;
+            text-align: center;
+        }
         
-for(var i=0;i<b.length;i++){ 
-    b[i].addEventListener("click",fun);
- }
-    function fun(){
-     this.classList.toggle('cl');
-       
-    }
-}
+        #im {
+            margin-top: 100px;
+            margin: 0 auto;
+            text-align: center;
+            height: 200px;
+            transition: all ease 1s;
+        }
+        
+        #im:hover {
+            transform: rotate(900deg);
+        }
+    </style>
+</head>
 
-       
+<body>
+    <div class="header">
+        <div class="menu"> <img id="img" src="img/header/Shape 1.png" alt="">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">CLIENTS</a></li>
+                    <li><a href="#">TEAM</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="cont"> <img src="img/header/title.png" class='img' alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio a corrupti quisquam tenetur deleniti, quam fuga? Quia fuga sequi unde expedita laboriosam odio error voluptates nobis sunt ipsa. </p>
+                <!--
+   <a href="" id="btn_1">FEATURES</a>
+   <a href="" id='btn_2'>FREE PSD</a>
+-->
+                <button id="btn_1"><a href="#">FEATURES</a></button>
+                <button id='btn_2'><a href="#">FREE PSD</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="content"> <img src="img/about%20creativia.png" class='img' alt="">
+        <p id='p'>Lorem ipsum dolor sit amet, consectetur <b>adipisicing elit.</b> Esse modi perspiciatis distinctio, laborum molestias cumque soluta! Odio natus ducimus aliquid recusandae!</p>
+        <div class="blocks">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nisi, assumenda labore consequuntur at, nam harum nemo dolore reprehenderit nesciunt veritatis dignissimos ipsam rem fugiat tempora quo numquam hic officia, porro quod, impedit minima asperiores.hic officia, porro quod, impedit minima asperiores.hic officia, porro quod, impedit minima asperiores.</p> <img src='img/content/img%20(1).png' class='img' alt=""> </div>
+        <div class="line"><img src="img/content/Shape%203.png" alt=""></div>
+        <div class="items">
+            <div class="item"> <img src="img/content/1%20(2).png" alt="">
+                <h2>FLAG FESIGN</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis deleniti dolorem unde et delectus. Corporis, quisquam quia!</p>
+            </div>
+            <div class="item"> <img src="img/content/2.png" alt="">
+                <h2>FLAG FESIGN</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis deleniti dolorem unde et delectus. Corporis, quisquam quia!</p>
+            </div>
+            <div class="item"> <img src="img/content/3.png" alt="">
+                <h2>FLAG FESIGN</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis deleniti dolorem unde et delectus. Corporis, quisquam quia!</p>
+            </div>
+            <div class="item"> <img src="img/content/4.png" alt="">
+                <h2>FLAG FESIGN</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis deleniti dolorem unde et delectus. Corporis, quisquam quia!</p>
+            </div>
+        </div>
+        <div class="portfolio">
+            <p>portfolio</p>
+            <ul>
+                <li>
+                    <a href="">ALL</a>
+                </li>
+                <li>
+                    <a href="" style='color:  #ff0036;'>ILLUSTRATION</a>
+                </li>
+                <li>
+                    <a href="">DIGITAL ART</a>
+                </li>
+                <li>
+                    <a href="">WEB DESIGN</a>
+                </li>
+            </ul>
+            <div class="fotos">
+              <div class="fotos1">
+                <div class="foto"><img src="img/content/imgs/Layer%207.png" alt=""></div>
+                <div class="foto"><img src="img/content/imgs/Layer%2018.png" alt=""></div>
+                <div class="foto"><img src="img/content/imgs/Layer%209.png" alt=""></div>
+                <div class="foto"><img src="img/content/imgs/Layer%2011.png " alt=""></div><br>
+              </div>
+               
+                 
+               <div class="fotos2">
+                <div class="foto"><img src="img/content/imgs/Layer%2013.png" alt=""></div>
+                <div class="foto"><img src="img/content/imgs/Layer14.png" alt="" ></div>
+                <div class="foto"><img src="img/content/imgs/Layer%2015.png" alt=""></div>
+                <div class="foto"><img src="img/content/imgs/Layer%2016.png" alt=""></div>
+               </div>
+            </div>
+            <div class="line" style='background: #ff0036;margin-top: 128px;'><img src="img/pic.png" alt=""></div>
+        </div>
+    </div>
+    <!-- </div> -->
+    <div class="footer"></div>
+    <script>
     </script>
 </body>
+
 </html>
