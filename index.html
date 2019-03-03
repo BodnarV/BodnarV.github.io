@@ -5,113 +5,149 @@
     <meta charset="UTF-8">
     <title>CREATIVIA</title>
     <link rel="stylesheet" href="css/style.css">
-    <style media="screen">
-        table td {
-            padding: 30px;
-            border: 1px solid black;
-            text-align: center;
-        }
-        
-        #im {
-            margin-top: 100px;
-            margin: 0 auto;
-            text-align: center;
-            height: 200px;
-            transition: all ease 1s;
-        }
-        
-        #im:hover {
-            transform: rotate(900deg);
-        }
-    </style>
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="menu"> <img id="img" src="img/header/Shape 1.png" alt="">
-            <nav>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">CLIENTS</a></li>
-                    <li><a href="#">TEAM</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </nav>
-            <div class="cont"> <img src="img/header/title.png" class='img' alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio a corrupti quisquam tenetur deleniti, quam fuga? Quia fuga sequi unde expedita laboriosam odio error voluptates nobis sunt ipsa. </p>
-                <!--
-   <a href="" id="btn_1">FEATURES</a>
-   <a href="" id='btn_2'>FREE PSD</a>
--->
-                <button id="btn_1"><a href="#">FEATURES</a></button>
-                <button id='btn_2'><a href="#">FREE PSD</a></button>
-            </div>
-        </div>
-    </div>
-    <div class="content"> <img src="img/about%20creativia.png" class='img' alt="">
-        <p id='p'>Lorem ipsum dolor sit amet, consectetur <b>adipisicing elit.</b> Esse modi perspiciatis distinctio, laborum molestias cumque soluta! Odio natus ducimus aliquid recusandae!</p>
-        <div class="blocks">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nisi, assumenda labore consequuntur at, nam harum nemo dolore reprehenderit nesciunt veritatis dignissimos ipsam rem fugiat tempora quo numquam hic officia, porro quod, impedit minima asperiores.hic officia, porro quod, impedit minima asperiores.hic officia, porro quod, impedit minima asperiores.</p> <img src='img/content/img%20(1).png' class='img' alt=""> </div>
-        <div class="line"><img src="img/content/Shape%203.png" alt=""></div>
-        <div class="items">
-            <div class="item"> <img src="img/content/1%20(2).png" alt="">
-                <h2>FLAG FESIGN</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis deleniti dolorem unde et delectus. Corporis, quisquam quia!</p>
-            </div>
-            <div class="item"> <img src="img/content/2.png" alt="">
-                <h2>FLAG FESIGN</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis deleniti dolorem unde et delectus. Corporis, quisquam quia!</p>
-            </div>
-            <div class="item"> <img src="img/content/3.png" alt="">
-                <h2>FLAG FESIGN</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis deleniti dolorem unde et delectus. Corporis, quisquam quia!</p>
-            </div>
-            <div class="item"> <img src="img/content/4.png" alt="">
-                <h2>FLAG FESIGN</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis deleniti dolorem unde et delectus. Corporis, quisquam quia!</p>
-            </div>
-        </div>
-        <div class="portfolio">
-            <p>portfolio</p>
-            <ul>
-                <li>
-                    <a href="">ALL</a>
-                </li>
-                <li>
-                    <a href="" style='color:  #ff0036;'>ILLUSTRATION</a>
-                </li>
-                <li>
-                    <a href="">DIGITAL ART</a>
-                </li>
-                <li>
-                    <a href="">WEB DESIGN</a>
-                </li>
-            </ul>
-            <div class="fotos">
-              <div class="fotos1">
-                <div class="foto"><img src="img/content/imgs/Layer%207.png" alt=""></div>
-                <div class="foto"><img src="img/content/imgs/Layer%2018.png" alt=""></div>
-                <div class="foto"><img src="img/content/imgs/Layer%209.png" alt=""></div>
-                <div class="foto"><img src="img/content/imgs/Layer%2011.png " alt=""></div><br>
-              </div>
-               
-                 
-               <div class="fotos2">
-                <div class="foto"><img src="img/content/imgs/Layer%2013.png" alt=""></div>
-                <div class="foto"><img src="img/content/imgs/Layer14.png" alt="" ></div>
-                <div class="foto"><img src="img/content/imgs/Layer%2015.png" alt=""></div>
-                <div class="foto"><img src="img/content/imgs/Layer%2016.png" alt=""></div>
+        <div class="header">
+               <div class="menu">
+               <img src="img/header/Shape%201.png" alt="" id="img">
+                <nav>
+                    <ul>
+                        <li><a href="#" >HOME</a></li>
+                        <li><a href="#" onclick="slowScroll('#About-us')">ABOUT</a></li>
+                        <li><a href="#" onclick="slowScroll('#more')">PORTFOLIO</a></li>
+                        <li><a href="#">CLIENTS</a></li>
+                        <li><a href="#">TEAM</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
                </div>
-            </div>
-            <div class="line" style='background: #ff0036;margin-top: 128px;'><img src="img/pic.png" alt=""></div>
+                <div class="cont wow flipInX"> <img src="img/header/title.png" class='img' alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio a corrupti quisquam tenetur deleniti, quam fuga? Quia fuga sequi unde expedita laboriosam odio error voluptates nobis sunt ipsa. </p>
+                    <button id="btn_1"><a href="#">FEATURES</a></button>
+                    <button id='btn_2'><a href="#">FREE PSD</a></button>
+                </div>
+            
         </div>
-    </div>
-    <!-- </div> -->
-    <div class="footer"></div>
-    <script>
-    </script>
+        <div class="content" id="About-us"> 
+            <img src="img/about%20creativia.png" class='img' alt="">
+            <p id='p' class="wow slideInDown">Lorem ipsum dolor sit amet, consectetur <b>adipisicing elit.</b> Esse modi perspiciatis distinctio, laborum molestias cumque soluta! Odio natus ducimus aliquid recusandae!</p>
+<!--=============================================================================================================-->
+            <div class="blocks">
+                <div class="bl-block">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nisi, assumenda labore consequuntur at, nam harum nemo dolore reprehenderit nesciunt veritatis dignissimos ipsam rem fugiat tempora quo numquam hic officia, porro quod, impedit minima asperiores.hic officia, porro quod, impedit minima asperiores.hic officia, porro quod, impedit minima asperiores. </p>
+                
+                <div class="block1">
+                    <div class="block2">
+                        <div>
+                            <span class="btn1" ><img src="img/Shape%207.png" alt="" ></span>
+                        </div>
+                        <div id="text" style="color: #ff0036;">HWO IS CREATIVIA</div>
+                    </div>
+                    <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ullam officiis unde fuga perferendis fugit sequi et mollitia nobis
+                     repellendus, ipsum, ducimus. Voluptate eaque numquam ipsum quia suscipit?</p>
+                </div>
+                <div class="block1">
+                    <div class="block2">
+                        <div>
+                            <span class="btn2"><img src="img/Shape%207.png" alt="" ></span>
+                        </div>
+                        <div id="text">Experiences</div>
+                    </div>
+                    <p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ullam officiis unde fuga perferendis fugit sequi et mollitia nobis
+                     repellendus, ipsum, ducimus. Voluptate eaque numquam ipsum quia suscipit?</p>
+                </div>
+                <div class="block1">
+                    <div class="block2">
+                        <div>
+                            <span class="btn3"><img src="img/Shape%207.png" alt="" ></span>
+                        </div>
+                        <div id="text">Learn more</div>
+                    </div>
+                    <p id="p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ullam officiis unde fuga perferendis fugit sequi et mollitia nobis
+                     repellendus, ipsum, ducimus. Voluptate eaque numquam ipsum quia suscipit?</p>
+                </div>
+                </div>
+                <div class="bl-block"><img src='img/content/img%20(1).png' alt="" width="100%" class="i"></div>
+             </div>
+  <!--=============================================================================================================-->              
+                
+                
+            <div class="line"><img src="img/content/Shape%203.png" alt=""></div>
+            <div class="items">
+                <div class="item wow fadeInLeft"> <img src="img/content/1%20(2).png" alt="">
+                    <h2>FLAG FESIGN</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis deleniti dolorem unde et delectus. Corporis, quisquam quia!</p>
+                </div>
+                <div class="item wow fadeInLeft"> <img src="img/content/2.png" alt="">
+                    <h2>FLAG FESIGN</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis deleniti dolorem unde et delectus. Corporis, quisquam quia!</p>
+                </div> 
+                <div class="item wow fadeInRight"> <img src="img/content/3.png" alt="">
+                    <h2>FLAG FESIGN</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis deleniti dolorem unde et delectus. Corporis, quisquam quia!</p>
+                </div>
+                <div class="item wow fadeInRight"> <img src="img/content/4.png" alt="">
+                    <h2>FLAG FESIGN</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis deleniti dolorem unde et delectus. Corporis, quisquam quia!</p>
+                </div>
+            </div>
+<!--==========================================================================            -->
+            <div class="portfolio" id="more">
+                <p>portfolio</p>
+                <ul>
+                    <li> <a href="">ALL</a> </li>
+                    <li> <a href="" style='color:  #ff0036;'>ILLUSTRATION</a> </li>
+                    <li> <a href="">DIGITAL ART</a> </li>
+                    <li> <a href="">WEB DESIGN</a> </li>
+                </ul>
+                <div class="fotos">
+                    <div class="fotos1">
+                        <div class="foto wow bounceInLeft"><img src="img/content/imgs/Layer%207.png" alt=""></div>
+                        <div class="foto wow bounceInDown"><img src="img/content/imgs/Layer%2018.png" alt=""></div>
+                        <div class="foto wow bounceInDown"><img src="img/content/imgs/Layer%209.png" alt=""></div>
+                        <div class="foto wow bounceInRight"><img src="img/content/imgs/Layer%2011.png " alt=""></div>
+                        <br> </div>
+                    <div class="fotos2">
+                        <div class="foto foto wow bounceInLeft"><img src="img/content/imgs/Layer%2013.png" alt=""></div>
+                        <div class="foto wow bounceInUp"><img src="img/content/imgs/Layer14.png" alt=""></div>
+                        <div class="foto wow bounceInUp"><img src="img/content/imgs/Layer%2015.png" alt=""></div>
+                        <div class="foto wow bounceInRight"><img src="img/content/imgs/Layer%2016.png" alt=""></div>
+                    </div>
+                </div>
+                <!--     =====================================================      -->
+                <!--     =====================================================      -->
+                <div class="line" style='background: #ff0036;margin-top: 128px;'><img src="img/pic.png" alt=""></div>
+            </div>
+        </div>
+        <div class="footer"></div>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/script.js" defer></script>
+        <script src="js/wow.min.js"></script>
+
+        <script>
+             $('.block1 p').hide();
+            
+             $('.btn1').on('click',function(){
+             $('.block1 #p1').slideToggle()});
+            
+             $('.btn2').on('click',function(){
+             $('.block1 #p2').slideToggle()});
+            
+             $('.btn3').on('click',function(){
+             $('.block1 #p3').slideToggle()});
+            //====================================================
+               function slowScroll(id){
+               var offset =0;
+               $('html,body').animate({
+               scrollTop: $(id).offset().top - offset
+               },900);
+               return false;
+      };
+            //=================================================
+              new WOW().init();
+        </script>
 </body>
 
 </html>
