@@ -170,18 +170,17 @@
     flex-basis:500px;
     align-items: center;
 }
-.block1{margin: 7px;}
+.block1{margin: 5px;}
 
 .block1 p{ margin: 5px;}
 .block2{
-    background:rgb(234, 234, 234);
+    background: #f7f7f7;
     display: flex;
     box-sizing: border-box; 
 }
 .block2 div{
-    padding:15px;
-    border: 1px solid rgb(164, 164, 164);
-    font-size: 25px;
+    padding:10px;
+    border: 1px solid #e7e7e7;
 }
 .block2 #text{
     width: 100%;
