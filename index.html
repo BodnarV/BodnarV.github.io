@@ -23,7 +23,7 @@
                <img src="img/header/Shape%201.png" alt="" id="img">
                 <nav>
                     <ul>
-                        <li><a href="#" >HOME</a></li>
+                        <li><a href="#" onclick="reload()">HOME</a></li>
                         <li><a href="#" onclick="slowScroll('#About-us')">ABOUT</a></li>
                         <li><a href="#" onclick="slowScroll('#more')">PORTFOLIO</a></li>
                         <li><a href="#">CLIENTS</a></li>
@@ -32,7 +32,7 @@
                     </ul>
                 </nav>
                </div>
-                <div class="cont wow flipInX"> <img src="img/header/title.png" class='img' alt="">
+                <div class="cont wow zoomIn"> <img src="img/header/title.png" class='img' alt="">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio a corrupti quisquam tenetur deleniti, quam fuga? Quia fuga sequi unde expedita laboriosam odio error voluptates nobis sunt ipsa. </p>
                     <button id="btn_1"><a href="#">FEATURES</a></button>
                     <button id='btn_2'><a href="#">FREE PSD</a></button>
@@ -85,7 +85,7 @@
                 
             <div class="line"><img src="img/content/Shape%203.png" alt=""></div>
             <div class="items">
-                <div class="item wow fadeInLeft"> <img src="img/content/1%20(2).png" alt="">
+                <div class="item "> <img src="img/content/1%20(2).png" alt="">
                     <h2>FLAG FESIGN</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis deleniti dolorem unde et delectus. Corporis, quisquam quia!</p>
                 </div>
@@ -97,7 +97,7 @@
                     <h2>FLAG FESIGN</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis deleniti dolorem unde et delectus. Corporis, quisquam quia!</p>
                 </div>
-                <div class="item wow fadeInRight"> <img src="img/content/4.png" alt="">
+                <div class="item"> <img src="img/content/4.png" alt="">
                     <h2>FLAG FESIGN</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis deleniti dolorem unde et delectus. Corporis, quisquam quia!</p>
                 </div>
@@ -113,16 +113,16 @@
                 </ul>
                 <div class="fotos">
                     <div class="fotos1">
-                        <div class="foto wow bounceInLeft"><img src="img/content/imgs/Layer%207.png" alt=""></div>
-                        <div class="foto wow bounceInDown"><img src="img/content/imgs/Layer%2018.png" alt=""></div>
-                        <div class="foto wow bounceInDown"><img src="img/content/imgs/Layer%209.png" alt=""></div>
-                        <div class="foto wow bounceInRight"><img src="img/content/imgs/Layer%2011.png " alt=""></div>
+                        <div class="foto wow fadeInDown"><img src="img/content/imgs/Layer%207.png" alt=""></div>
+                        <div class="foto wow fadeInUp"><img src="img/content/imgs/Layer%2018.png" alt=""></div>
+                        <div class="foto wow fadeInDown"><img src="img/content/imgs/Layer%209.png" alt=""></div>
+                        <div class="foto wow fadeInUp"><img src="img/content/imgs/Layer%2011.png " alt=""></div>
                         <br> </div>
                     <div class="fotos2">
-                        <div class="foto foto wow bounceInLeft"><img src="img/content/imgs/Layer%2013.png" alt=""></div>
-                        <div class="foto wow bounceInUp"><img src="img/content/imgs/Layer14.png" alt=""></div>
-                        <div class="foto wow bounceInUp"><img src="img/content/imgs/Layer%2015.png" alt=""></div>
-                        <div class="foto wow bounceInRight"><img src="img/content/imgs/Layer%2016.png" alt=""></div>
+                        <div class="foto wow fadeInDown"><img src="img/content/imgs/Layer%2013.png" alt=""></div>
+                        <div class="foto wow fadeInUp"><img src="img/content/imgs/Layer14.png" alt=""></div>
+                        <div class="foto wow fadeInDown"><img src="img/content/imgs/Layer%2015.png" alt=""></div>
+                        <div class="foto wow fadeInUp"><img src="img/content/imgs/Layer%2016.png" alt=""></div>
                     </div>
                 </div>
                 <!--     =====================================================      -->
@@ -136,6 +136,7 @@
         <script src="js/wow.min.js"></script>
 
         <script>
+            
              $('.block1 p').hide();
             
              $('.btn1').on('click',function(){
@@ -155,7 +156,11 @@
                return false;
       };
             //=================================================
-              new WOW().init();
+            function reload(){
+                location.reload();
+            }
+            //=================================================
+              
         </script>
 </body>
 
