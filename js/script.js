@@ -1,3 +1,7 @@
+//=================================================Preloader
+ $(window).on('load',function(){
+ $('#preloader').css('opacity','0');
+});
 //=======================================================blocks
   $('.block1 p').hide();
  
@@ -10,11 +14,7 @@
   $('.btn3').on('click',function(){
   $('.block1 #p3').slideToggle()});
 
-            
- //=================================================Preloader
- window.onload = function(){
- document.getElementById('preloader').style.opacity = '0';
- }
+        
 //=================================================Reload(menu) + WOW
   function reload(){
       location.reload();
@@ -29,13 +29,13 @@
    return false;
    };
 
-//========================================================
+//========================================================Fon
 $(document).ready(function(){
     particlesJS.load('particles-js', 'particles.json', function() {
     console.log('callback - particles.js config loaded');
    });
 });
-
+ 
 
 
 
