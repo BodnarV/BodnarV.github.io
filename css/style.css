@@ -1,8 +1,24 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: RELEWAY;
+    font-family: initial;
+    
 }
+
+/*
+@font-face {
+font-family: 'Myriad Pro Regular';
+src: url('../fonts/MyriadPro-Regular.eot');
+src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/MyriadPro-Regular.woff') format('woff'),
+url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+body{font-family: 'Myriad Pro Regular';}
+*/
+
 .header
 {
   background: url(../img/header/img.jpg)no-repeat center top /cover;
@@ -25,6 +41,9 @@
    .menu nav ul li a{font-size:30px;}
    .header{height: 100vh};
    .bl-block p{font-size: 25px}
+   .panels p{font-size: 20px;}
+    .rozdil{flex-basis: 370px;}
+ 
 }
 /*-------------------------------------------------*/
   @media (max-width:1366px){
@@ -35,6 +54,9 @@
     .bl-block{margin-top: 50px}
     .bl-block p{font-size: 15px}
     .bl-block .i{margin-top: 50px;}
+    .panels p{font-size:13px;}
+    .rozdil{flex-basis: 290px;}
+
     
 }
 
@@ -120,12 +142,12 @@
     text-decoration: none;
 
 }
-.cont #btn_1 {
+#btn_1 {
     background-color:#ff0036;
     margin: 15px;
     margin-top:40px;
 }
-.cont #btn_2 {
+ #btn_2 {
     background-color:black;
     margin:15px;
     margin-top:40px;
@@ -202,12 +224,12 @@ text-transform: uppercase;
     width: 30%;
     background: #262626;;
     margin: 0 auto;
-    margin-top:150px;
+    margin-top:120px;
     margin-bottom: 50px;
 }
 .line img{
    position: relative;
-   top:-8px;
+   top:-12px;
 }
 
 /*=======================================================*/
@@ -231,7 +253,7 @@ text-transform: uppercase;
     height:1100px;
     background-color: #262626;
     margin-top: 80px;
-    margin-bottom: 80px;
+
 }
 .portfolio p{
     color: white;
@@ -262,6 +284,7 @@ text-transform: uppercase;
     display: flex;
 }
 .fotos .fotos1 .foto{
+    display: flex;
     height: 357px;
     width:430px;
     margin-top: 70px;
@@ -274,38 +297,141 @@ text-transform: uppercase;
 
 .fotos .fotos1 div:nth-child(1){
    background:#f39943;
-   width: 530px;
+    flex: 3;
 }.fotos .fotos1 div:nth-child(2){
    background: rgb(55, 130, 170);
+    flex: 2;
 }.fotos .fotos1 div:nth-child(3){
    background:#ef5d88;
-   width: 530px;
+     flex: 3;
 }.fotos .fotos1 div:nth-child(4){
    background:#f6f0e0;
+    flex: 2;
 }
-
 
 .fotos .fotos2 div:nth-child(1){
    background:#56cc82;
+   flex: 2;
 }.fotos .fotos2 div:nth-child(2){
    background: #95a5a5;;
-    width: 530px;
+     flex: 3;
 }.fotos .fotos2 div:nth-child(3){
    background:#24b0c9;
+     flex: 2;
 }.fotos .fotos2 div:nth-child(4){
    background:#fa8562;
-    width: 530px;
+     flex: 3;;
 }
 
-.fotos .fotos1 .foto img{
-    float: right;
-}
-.fotos .fotos2 .foto img{
-    float: right;
+.fotos .fotos1 .foto,.fotos .fotos2 .foto{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 
 /*=======================================================*/
+.our-product{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 300px;
+    
+}
+.our-product img{
+    position: absolute;
+    text-align: center;
+}
+.our-product .cont{
+    position: absolute;
+    top:30px;
+}
+
+
+.our-product img:nth-child(1){
+}
+.our-product img:nth-child(2){
+    top:-200px;
+}
+.our-product img:nth-child(3){
+    top:-155px;
+}
+.our-product img:nth-child(4){
+    top:205px;
+    padding-bottom: 200px;
+}
+.our-product img:nth-child(5){
+    top:-180px;
+  }
+/*-------------------------------------------------------*/
+.our{
+    display: flex;
+    justify-content: center;
+}
+.panels p{
+    border:1px solid  #e7e7e7;
+    padding:20px 10px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    transition: all ease 700ms;
+}
+.panels p img{
+    height: 20%;
+    padding: 0px 10px;
+}
+.panels .text-right{justify-content: flex-start;}
+.panels .text-left {justify-content:flex-end}
+
+.panels{
+    flex-direction: column;
+    margin-top: 165px;
+}
+.rozdils{
+   display: flex;
+   justify-content: space-around;
+   
+}
+.panels p:hover{
+    background-color:  #ff0036;
+    color: white;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+#particles-js canvas{
+
+    margin-top: -27%;
+    margin-bottom:10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -7,9 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    
+<!--
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+-->
+    
 </head>
 
-<body>
 <div class="preloader" id="preloader">
    <div class="cssload-loader">
 	<div class="cssload-inner cssload-one"></div>
@@ -17,7 +23,9 @@
 	<div class="cssload-inner cssload-three"></div>
   </div>
 </div>
-<!--======================================================       -->
+
+<body>
+<!--======================================================-->
         <div class="header">
                <div class="menu">
                <img src="img/header/Shape%201.png" alt="" id="img">
@@ -26,7 +34,7 @@
                         <li><a href="#" onclick="reload()">HOME</a></li>
                         <li><a href="#" onclick="slowScroll('#About-us')">ABOUT</a></li>
                         <li><a href="#" onclick="slowScroll('#more')">PORTFOLIO</a></li>
-                        <li><a href="#">CLIENTS</a></li>
+                        <li><a href="#" onclick="slowScroll('.our')">PRODUCT</a></li>
                         <li><a href="#">TEAM</a></li>
                         <li><a href="#">CONTACT</a></li>
                     </ul>
@@ -127,40 +135,72 @@
                 </div>
                 <!--     =====================================================      -->
                 <!--     =====================================================      -->
-                <div class="line" style='background: #ff0036;margin-top: 128px;'><img src="img/pic.png" alt=""></div>
+                <div class="line" style='background: #ff0036;margin-top:75px;'><img src="img/pic.png" alt=""></div>
             </div>
         </div>
-        <div class="footer"></div>
+        <div style="width:100%;height: 100px;background:#111"></div>
+<!--======================================================================================================================-->
+       <div class="color" style="background:#111">
+        <div id="particles-js">
+            
+         <div class="our">
+                 <div class="content" id="About-us"> 
+                   <img src="img/our-product/our%20product%20features%20(1).png" alt="">
+                   <p id='p' class="wow slideInDown">Lorem ipsum dolor sit amet, consectetur <b>adipisicing elit.</b> Esse modi perspiciatis distinctio, 
+                   laborum molestias cumque
+             soluta! Odio natus ducimus aliquid recusandae!</p>
+             </div>
+         </div>
+         
+        <div class="rozdils">
+         <div class="panels rozdil">
+             <p class="text-left wow fadeInLeft">Unlimited Color Options <img src="img/our-product/icon.png"></p>
+             <p class="text-left wow fadeInLeft">Outstanding Support <img src="img/our-product/icon.png"></p>
+             <p class="text-left wow fadeInLeft">Retina Ready <img src="img/our-product/icon.png"></p>
+            
+             
+         </div>
+          <div class="our-product rozdil">
+              <img src="img/our-product/Shape%202%20copy%209.png">
+              <img src="img/our-product/Inner%20Panel%20(1).png">
+              <img src="img/our-product/Replace%20Me.png">
+              <img src="img/our-product/Shape%202%20copy%2010.png" alt="">
+              <img src="img/our-product/Shape.png" alt="">
+              <div class="cont">
+                  <button id='btn_1 btn'  style="background:#393939;width: 120px;margin-top: 210px;"><a href="#">FREE PSD</a></button>
+            </div>
+          </div>
+          <div class="panels rozdil">
+             <p class="text-right wow fadeInRight"><img src="img/our-product/icon.png">Unlimited Color Options</p>
+             <p class="text-right wow fadeInRight"><img src="img/our-product/icon.png">Outstanding Support</p>
+             <p class="text-right wow fadeInRight"><img src="img/our-product/icon.png">Retina Ready</p>
+            
+             
+            </div>
+          </div>
+     </div>
+    </div>
+        <div class="footer">
+        </div>
         <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/script.js" defer></script>
         <script src="js/wow.min.js"></script>
+        <script src="js/script.js"></script>
+        
+          <script src="demo/js/particles.js"></script>
+          <script src="demo/js/app.js"></script>
+          <script src="demo/js/lib/stats.js"></script>
+        
+       
+        
 
         <script>
-            
-             $('.block1 p').hide();
-            
-             $('.btn1').on('click',function(){
-             $('.block1 #p1').slideToggle()});
-            
-             $('.btn2').on('click',function(){
-             $('.block1 #p2').slideToggle()});
-            
-             $('.btn3').on('click',function(){
-             $('.block1 #p3').slideToggle()});
-            //====================================================
-               function slowScroll(id){
-               var offset =0;
-               $('html,body').animate({
-               scrollTop: $(id).offset().top - offset
-               },900);
-               return false;
-      };
-            //=================================================
-            function reload(){
-                location.reload();
-            }
-            //=================================================
-              
+            $(document).ready(function(){
+    particlesJS.load('particles-js', 'particles.json', function() {
+    console.log('callback - particles.js config loaded');
+   });
+});
+           
+			
         </script>
 </body>
 
