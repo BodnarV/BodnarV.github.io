@@ -1,6 +1,9 @@
 //=================================================Preloader
+$(body).css('opacity','0');
+$('#preloader').css('opacity','1');
  $(window).on('load',function(){
  $('#preloader').css('opacity','0');
+ $(body).css('opacity','1');
 });
 //=======================================================blocks
   $('.block1 p').hide();
