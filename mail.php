@@ -1,5 +1,4 @@
 <?php
-
 $recepient = "bogdan_bodnar_01@ukr.net";
 $siteName = "Ajax-форма";
 
