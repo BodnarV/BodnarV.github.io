@@ -54,7 +54,7 @@ let AppRoutingModule = class AppRoutingModule {
 };
 AppRoutingModule = (0,tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([
     (0,_angular_core__WEBPACK_IMPORTED_MODULE_3__.NgModule)({
-        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_4__.RouterModule.forRoot(routes)],
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_4__.RouterModule.forRoot(routes, { useHash: true })],
         exports: [_angular_router__WEBPACK_IMPORTED_MODULE_4__.RouterModule]
     })
 ], AppRoutingModule);
@@ -121,6 +121,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _core_core_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @core/core.module */ 40294);
 /* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/platform-browser/animations */ 20718);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common/http */ 53882);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ 54364);
+
 
 
 
@@ -141,7 +143,7 @@ AppModule = (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__decorate)([
             _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule,
             _core_core_module__WEBPACK_IMPORTED_MODULE_2__.CoreModule,
         ],
-        providers: [],
+        providers: [{ provide: _angular_common__WEBPACK_IMPORTED_MODULE_8__.LocationStrategy, useClass: _angular_common__WEBPACK_IMPORTED_MODULE_8__.HashLocationStrategy }],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent]
     })
 ], AppModule);

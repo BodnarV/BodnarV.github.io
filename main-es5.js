@@ -103,7 +103,9 @@
       };
 
       _AppRoutingModule = (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_3__.NgModule)({
-        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_4__.RouterModule.forRoot(routes)],
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_4__.RouterModule.forRoot(routes, {
+          useHash: true
+        })],
         exports: [_angular_router__WEBPACK_IMPORTED_MODULE_4__.RouterModule]
       })], _AppRoutingModule);
       /***/
@@ -247,6 +249,12 @@
       var _angular_common_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! @angular/common/http */
       53882);
+      /* harmony import */
+
+
+      var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+      /*! @angular/common */
+      54364);
 
       var _AppModule = function AppModule() {
         _classCallCheck(this, AppModule);
@@ -255,7 +263,10 @@
       _AppModule = (0, tslib__WEBPACK_IMPORTED_MODULE_3__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_4__.NgModule)({
         declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent],
         imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__.BrowserModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_6__.HttpClientModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__.BrowserAnimationsModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _core_core_module__WEBPACK_IMPORTED_MODULE_2__.CoreModule],
-        providers: [],
+        providers: [{
+          provide: _angular_common__WEBPACK_IMPORTED_MODULE_8__.LocationStrategy,
+          useClass: _angular_common__WEBPACK_IMPORTED_MODULE_8__.HashLocationStrategy
+        }],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent]
       })], _AppModule);
       /***/
