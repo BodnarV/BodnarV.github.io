@@ -2721,6 +2721,7 @@ p {
   transition: box-shadow 600ms ease, border 600ms ease;
   cursor: pointer;
   border: 1px solid transparent;
+  text-align: center;
 }
 .single-ques:hover {
   box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.25);
@@ -2940,7 +2941,7 @@ p {
   top: 0%;
   right: auto;
   bottom: auto;
-  display: none;
+  display: flex;
   width: 100vw;
   height: 100vh;
   align-items: center;
@@ -2948,7 +2949,6 @@ p {
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0;
 }
 .completed-screen.show {
   display: flex;
@@ -3857,6 +3857,7 @@ p {
 }
 .is-events-none {
   pointer-events: none;
+  touch-action: none;
 }
 .dots-container:not(.step-nav) {
   display: none !important;
@@ -3982,7 +3983,7 @@ input[type=range]:focus::-ms-fill-lower,
 input[type=range]:focus::-ms-fill-upper {
   background: #000000;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 991px) {
   .slide-container.choose-room {
     width: calc(100% + 80px);
   }
@@ -4000,7 +4001,7 @@ input[type=range]:focus::-ms-fill-upper {
     margin: 20px 0;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 991px) {
   .rooms-list-container {
     width: calc(100% + 40px);
   }
@@ -4158,7 +4159,7 @@ li.prop-item:not(:first-child)::before {
   -o-object-position: 25%;
      object-position: 25%;
 }
-img.hotel-img {
+.hotel-img {
   position: absolute;
   top: 47%;
   left: 70%;
@@ -4170,8 +4171,8 @@ img.hotel-img {
 .single-room:hover li.prop-item:not(:first-child)::before {
   background: #000;
 }
-@media screen and (max-width: 768px) {
-  img.hotel-img {
+@media screen and (max-width: 991px) {
+  .hotel-img {
     top: 80%;
     left: 20%;
     height: 40vh;
@@ -4200,7 +4201,7 @@ li.prop-item:first-child {
     display: none;
   }
 
-  img.hotel-img {
+  .hotel-img {
     height: 35vh;
     top: 78%;
   }
@@ -4289,4 +4290,66 @@ li.prop-item:first-child {
     display: none;
     opacity: 0;
   }
+}
+.h-scrollbar {
+  overflow: hidden;
+  overflow-y: auto;
+  scrollbar-color: #adb5ca transparent;
+  scrollbar-width: thin;
+  transition: background-color 0.3s ease;
+}
+.h-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.h-scrollbar::-webkit-scrollbar-track {
+  width: 100%;
+  background-color: transparent;
+}
+.h-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #adb5ca;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+.h-scrollbar--hidden::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.h-scrollbar--hidden:hover::-webkit-scrollbar-thumb {
+  background-color: #adb5ca;
+}
+.h-scrollbar--light {
+  scrollbar-color: #b0abce #F4F2FF;
+  overflow-x: auto !important;
+  overflow-y: auto !important;
+}
+.h-scrollbar--light::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.h-scrollbar--light::-webkit-scrollbar-thumb {
+  background-color: #b0abce;
+  border-radius: 0;
+  min-height: 90px;
+}
+.h-scrollbar--light::-webkit-scrollbar-thumb:vertical {
+  border-top: 40px solid #F4F2FF;
+}
+.h-scrollbar--light::-webkit-scrollbar-thumb:horizontal {
+  min-height: auto;
+}
+.h-scrollbar--light::-webkit-scrollbar-track {
+  background-color: #F4F2FF;
+}
+.h-scrollbar--sm {
+  max-height: 300px;
+}
+.h-scrollbar--md {
+  max-height: 500px;
+}
+.h-scrollbar--lg {
+  max-height: 800px;
+}
+.h-scrollbar--xs {
+  max-height: 1000px;
 }
