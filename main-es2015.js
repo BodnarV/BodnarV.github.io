@@ -363,11 +363,11 @@ __webpack_require__.r(__webpack_exports__);
 const ALL_ROUTES = [
     {
         path: _configs_routing_config__WEBPACK_IMPORTED_MODULE_0__.LayoutRoutes.HOME,
-        loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_rxjs__esm2015_internal_operators_takeUntil_js-src_app_core_guards_animat-b6378b"), __webpack_require__.e("src_app_home_home_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! home/home.module */ 3467)).then(m => m.HomeModule)
+        loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_rxjs__esm2015_internal_operators_takeUntil_js-src_app_core_guards_animat-e40498"), __webpack_require__.e("src_app_home_home_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! home/home.module */ 3467)).then(m => m.HomeModule)
     },
     {
         path: _configs_routing_config__WEBPACK_IMPORTED_MODULE_0__.LayoutRoutes.ROOMS,
-        loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_rxjs__esm2015_internal_operators_takeUntil_js-src_app_core_guards_animat-b6378b"), __webpack_require__.e("src_app_room_room_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! room/room.module */ 82036)).then(m => m.RoomModule)
+        loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_rxjs__esm2015_internal_operators_takeUntil_js-src_app_core_guards_animat-e40498"), __webpack_require__.e("src_app_room_room_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! room/room.module */ 82036)).then(m => m.RoomModule)
     }
 ];
 
